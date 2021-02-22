@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(235,226,226);
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 16%;
+    height: 10px;
+    background-color: black;
+}
+.container{
+    background-color: white;
+    width: 40%;
+    height: 62vh;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 1px 1px black;
+    text-align: center;
+    padding: 30px;
+}
+.img-container{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: aqua;
+    position: relative;
+}
+#pic1{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: -5%;
+}
+.img-container::after{
+    content: open-quote;
+    position: absolute;
+    top: 4%;
+    left: -6.5%;
+    font-size: 50px;
+    background-color: aqua;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+}
+#auther{
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+#jop{
+    font-size: 17px;
+    color: aqua;
+}
+#info{
+    color: #555;
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.btn i{
+    color: aqua;
+    font-size: 40px;
+}
+.random-btn{
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid aqua;
+    color: aqua;
+    border-radius: 15px;
+    padding: 7px 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    outline:none;
+}
+.random-btn:hover{
+    background-color: aqua;
+    color: white;
+}
